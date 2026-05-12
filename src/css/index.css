@@ -119,6 +119,11 @@
       color: var(--blue);
     }
 
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
     .nav-badge {
       font-size: 11px;
       font-weight: 600;
@@ -366,7 +371,8 @@
     }
 
     .notify-btn {
-      padding: 14px 28px;
+      margin-top: 1rem;
+      padding: 4px 8px;
       background: var(--light);
       color: var(--dark);
       border: var(--border);
@@ -383,8 +389,6 @@
       background: var(--blue);
       color: var(--light);
       border-color: var(--blue);
-      transform: translate(-3px, -3px);
-      box-shadow: 3px 3px 0px var(--light);
     }
 
     .notify-btn:active {
