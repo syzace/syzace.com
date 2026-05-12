@@ -33,7 +33,7 @@ document.querySelectorAll('button, a, input').forEach(el => {
 });
 
 const launchDate = new Date();
-launchDate.setDate(launchDate.getDate() + 90);
+launchDate.setDate(launchDate.getDate() + 120);
 
 function updateCountdown() {
   const now = new Date();

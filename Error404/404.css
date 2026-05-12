@@ -130,46 +130,99 @@
         background: transparent;
     }
 
-    /* HERO */
-    .hero {
-        position: relative;
-        z-index: 2;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 8rem 2rem 4rem;
-        text-align: center;
-    }
+/* ── Hero Layout ── */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    overflow: hidden;
+}
 
-    /* DECORATIVE ELEMENTS */
-    .deco-corner {
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        border-color: var(--blue);
-        border-style: solid;
-        opacity: 0.3;
-    }
+/* ── Decorative corners */
+.deco-corner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-color: var(--blue);
+    border-style: solid;
+    opacity: 0.3;
+}
+.deco-bl { bottom: 24px; left: 24px;  border-width: 0 0 2px 2px; }
+.deco-br { bottom: 24px; right: 24px; border-width: 0 2px 2px 0; }
 
-    .deco-tl {
-        top: 120px;
-        left: 40px;
-        border-width: 2px 0 0 2px;
-    }
+/* ── Status label ── */
+.hero-code {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    opacity: 0.45;
+    margin-bottom: 1.25rem;
+}
 
-    .deco-br {
-        bottom: 40px;
-        right: 40px;
-        border-width: 0 2px 2px 0;
-    }
+/* ── Robot image ── */
+.hero-img-wrap {
+    margin-bottom: 1.75rem;
+}
 
-    .hero h1 {
-        font-size: 4rem;
-        font-weight: 800;
-        font
-    }
-    .error {
-        color: var(--blue);
-    }
+.hero img {
+    width: 480px;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: var(--text-color);
+    margin: 0 0 0.75rem;
+}
+
+.hero h1 .error {
+    display: inline-block;
+    position: relative;
+    color: var(--blue);
+    padding: 0 0.1em;
+}
+
+
+
+.hero-sub {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.6;
+    line-height: 1.6;
+    max-width: 380px;
+    margin: 0 0 2rem;
+}
+
+
+.home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blue);
+    border: 1.5px solid var(--blue);
+    padding: 0.8rem 1.75rem;
+    background: transparent;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    cursor: none;
+}
+
+.home:hover {
+    background: var(--blue);
+    color: #fff;
+}
